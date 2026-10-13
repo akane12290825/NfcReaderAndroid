@@ -1,16 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="16dp">
-
-    <TextView
-        android:id="@+id/statusText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="請將 NFC 卡片靠近手機感應"
-        android:textSize="18sp"
-        android:textAlignment="center" />
-
-</RelativeLayout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" androidorientation="vertical" androidlayout_width="match_parent" androidlayout_height="match_parent" androidpadding="16dp">
+    <TextView androidid="@+id/title" androidlayout_width="wrap_content" androidlayout_height="wrap_content" androidgravity="center" androidtextColor="#1A237E" androidtextSize="24sp" androidtextStyle="bold" androidtext="NFC Reader Pro V2" androidpaddingBottom="8dp"/>
+    <TextView androidid="@+id/status" androidlayout_width="match_parent" androidlayout_height="wrap_content" androidgravity="center" androidtextColor="#00796B" androidtextSize="16sp" androidtextSize="18sp" androidtext="請將卡片靠近手機..."/>
+    <Button androidid="@+id/clearBtn" androidlayout_width="match_parent" androidlayout_height="wrap_content" androidbackgroundTint="#F44336" androidlayout_marginTop="8dp" androidtext="清除紀錄" />
+</LinearLayout>
